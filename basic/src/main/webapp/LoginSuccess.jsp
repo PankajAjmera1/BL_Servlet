@@ -9,6 +9,8 @@
 </head>
 <body class="d-flex justify-content-center align-items-center vh-100 bg-light">
     <div class="card p-4 text-center shadow-lg">
+        <!-- FirstServlet Link -->
+        <a href="FirstServlet" class="btn btn-link mb-3">Go to FirstServlet</a>
         <h2 class="text-success">Welcome, <%= request.getAttribute("username") %>!</h2>
         <p class="text-muted">You have successfully logged in.</p>
         <a href="login.html" class="btn btn-primary mt-3">Go to Login Page</a>

@@ -20,9 +20,19 @@ public class SimpleServlet  extends HttpServlet {
         out.println("<html>");
         out.println("<head>");
         out.println("<title>First Servlet</title>");
+        out.println("<link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css'>");
         out.println("</head>");
-        out.println("<body>");
+
+        out.println("<body class='d-flex flex-column align-items-center justify-content-center vh-100 bg-light'>");
+
+        out.println("<div class='card p-4 text-center shadow-lg'>");
+        out.println("<h2>Welcome to the First Servlet</h2>");
         out.println("<h1>Pankaj Server</h1>");
+
+        // Login Page Link
+        out.println("<a href='login.html' class='btn btn-primary mt-3'>Go to Login Page</a>");
+
+        out.println("</div>");
         out.println("</body>");
         out.println("</html>");
         out.close();
